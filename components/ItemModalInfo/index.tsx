@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import styles from './styles.module.scss'
+import Image from 'next/image'
 
 interface ItemModalInfoProps {
   image: string,

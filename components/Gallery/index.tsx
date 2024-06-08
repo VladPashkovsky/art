@@ -42,7 +42,6 @@ export const Gallery = () => {
         <Modal
           backgroundUrl={modalInfo.coverImage}
           onClickClose={() => {setModalInfo(null)}}
-          onKeyDown={() => {}}
           titleUrl={modalInfo.titleUrl}
           title={modalInfo.title}
           text={modalInfo.content}

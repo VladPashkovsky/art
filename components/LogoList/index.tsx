@@ -1,6 +1,7 @@
 import cl from 'classnames'
 
 import styles from './style.module.scss'
+import Image from 'next/image'
 
 interface LogoListProps {
   id: number,
@@ -48,7 +49,7 @@ export const LogoList: React.FC<LogoListClass> = ({ className, onClick }) => {
     <ul className={cl(className, styles.logoList)}>
       {logos.map((item) => (
         <li key={item.id} className={styles.logoItem} onClick={() => window.open(item.link)}>
-          <img className={styles.logoItemPics} src={item.pic}></img>
+          <img className={styles.logoItemPics} src={item.pic} alt=""></img>
           <span className={styles.logoItemText}>{item.title}</span>
           <span className={styles.logoItemAngleLeft} />
         </li>

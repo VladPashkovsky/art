@@ -1,6 +1,7 @@
 import React from 'react'
 import cl from 'classnames'
 import styles from './style.module.scss'
+import Image from 'next/image'
 
 interface GlassCardProps {
   imageUrl: string;
