@@ -13,6 +13,7 @@ README.md
 /.next/
 /out/
 .idea
+Config.txt
 
 # production
 /build
