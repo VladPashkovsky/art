@@ -1,0 +1,79 @@
+.header {
+  position: absolute;
+  height: 15vh;
+  width: 100vw;
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+
+  .header_inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10rem;
+    width: 100vw;
+    padding: 0 40px;
+
+    .logo {
+
+      &British {
+        background: url('/images/British_Museum/british-museum-logo.svg') center no-repeat;
+        height: 20vh;
+        width: 20vw;
+      }
+
+      &Borghese {
+        background: url('/images/Borghese/borghese_logo.svg') center no-repeat;
+        height: 12vh;
+        width: 20vw;
+      }
+
+      &Louvre {
+        background: url('/images/Louvre/Louvre_logo_small.png') center no-repeat;
+        height: 10vh;
+        width: 20vw;
+      }
+
+      &Hermitage {
+        background: url('/images/Hermitage/Hermitage_logo.png') center no-repeat;
+        height: 10vh;
+        width: 10vw;
+      }
+
+      &Vatican {
+        background: url('/images/Vatican_Museums/Vatican_logo_small.png') center no-repeat;
+        height: 12vh;
+        width: 20vw;
+      }
+
+    }
+
+    .title {
+      position: absolute;
+      left: 9vw;
+      display: table-cell;
+      width: 80px;
+      line-height: 1.8rem;
+      color: white;
+      vertical-align: middle;
+    }
+
+
+    .button {
+      z-index: 10;
+    }
+  }
+
+  &white {
+    background: linear-gradient(to left, gray, white);
+  }
+
+  &black {
+    background-color: black;
+  }
+
+
+}
+

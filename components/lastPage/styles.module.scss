@@ -1,0 +1,63 @@
+.PageContainer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  //left: 0;
+  //bottom: 0;
+  justify-content: space-around;
+  align-items: center;
+  //z-index: 10;
+  //background-color: #6F3C45;
+
+}
+
+.Emperor {
+  position: absolute;
+  background: url('/bg/August_comp.png') no-repeat;
+  background-size: contain;
+  min-height: 115%;
+  width: 100%;
+  bottom: 0;
+  //animation: show 1.5s linear;
+  //animation-delay: 4500ms;
+
+  //&:hover {
+  //  animation: show 1.5s linear;
+  //}
+}
+
+@keyframes show {
+  0% {
+    filter: blur(8px);
+  }
+  50% {
+    filter: blur(4px);
+  }
+  100% {
+    filter: none;
+  }
+
+}
+
+.Form {
+  position: absolute;
+  display: inline-block;
+  right: 7vw;
+  width: 30vw;
+  height: 50vh;
+  padding: 20px;
+  border: 4px black solid;
+  border-radius: 20px;
+  //background-color: white;
+  background: linear-gradient(
+                  45deg,
+            //rgba(255, 255, 255, 1) 0%,
+            //rgba(255, 255, 255, 1) 35%,
+            //#58B9FF 71%,
+            //#4BB7AA 89%
+                  #fdebeb 0%,
+                  #fde4e4 50%,
+                  #a90909 100%
+  );
+}

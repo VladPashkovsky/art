@@ -1,0 +1,588 @@
+$size-height: 0.3571rem;
+$size-top: 1.8571rem;
+$size-bottom: 2.4286rem;
+$size-border: 2px;
+
+.artButton {
+  border: none;
+  padding: 20px 30px;
+  //font-size: 44px;
+  font: 1.1429rem/1rem 'NeueMachina', sans-serif;
+  position: relative;
+  background: transparent;
+  //color: black;
+  //text-transform: uppercase;
+  //border: 3px solid black;
+  cursor: pointer;
+  transition: all 0.7s;
+  overflow: hidden;
+  border-radius: 15px;
+
+  &One, &Two, &Three, &Four {
+    transition: all 0.7s;
+    z-index: -1;
+  }
+
+  &:hover {
+
+    .artButtonOne {
+      top: 0;
+      right: 0;
+    }
+
+    .artButtonTwo {
+      top: 0;
+      left: 50%;
+    }
+
+    .artButtonThree {
+      top: 0;
+      left: 25%;
+    }
+
+    .artButtonFour {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &One {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    //background: black;
+  }
+
+  &Two {
+    content: "";
+    position: absolute;
+    left: 25%;
+    top: -100%;
+    height: 100%;
+    width: 25%;
+    //background: black;
+  }
+
+  &Three {
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    top: 100%;
+    width: 25%;
+    //background: black;
+  }
+
+  &Four {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    //background: black;
+  }
+
+  &Icon {
+    content: url("./git_icon/github-mark.png");
+    position: absolute;
+    display: flex;
+    top: 0;
+    height: 100%;
+    width: auto;
+    opacity: 0;
+    transition: 0.9s;
+  }
+
+  &AngleLeft {
+    position: absolute;
+    top: 10px;
+    left: 4.5px;
+    width: 0;
+    height: 0;
+    //z-index: 1;
+    border-top: 10px solid white;
+    border-right: 10px solid transparent;
+    transition: 0.9s;
+    opacity: 0;
+  }
+
+  &AngleRight {
+    position: absolute;
+    bottom: 5px;
+    right: 4.5px;
+    width: 0;
+    height: 0;
+    //z-index: 1;
+    border-bottom: 10px solid white;
+    border-left: 10px solid transparent;
+    transition: 0.9s;
+    opacity: 0;
+  }
+
+  //&Type {
+  //  //font-weight: bold;
+  //  color: black;
+  //
+  //  .artButtonAngleLeft,
+  //  .artButtonAngleRight {
+  //    //display: none;
+  //  }
+  //}
+
+  &White {
+    color: white;
+    border: 3px solid white;
+
+    &:hover {
+      color: black;
+
+      .artButtonOne {
+        background: white;
+      }
+
+      .artButtonTwo {
+        background: white;
+      }
+
+      .artButtonThree {
+        background: white;
+      }
+
+      .artButtonFour {
+        background: white;
+      }
+    }
+  }
+
+  &Black {
+    color: black;
+    border: 3px solid black;
+
+    &:hover {
+      color: white;
+
+      .artButtonOne {
+        background: black;
+      }
+
+      .artButtonTwo {
+        background: black;
+      }
+
+      .artButtonThree {
+        background: black;
+      }
+
+      .artButtonFour {
+        background: black;
+      }
+    }
+  }
+
+  &Icon_White {
+    color: white;
+    border: 3px solid white;
+
+    &:hover {
+      color: white;
+
+      .artButtonOne {
+        background: white;
+      }
+
+      .artButtonTwo {
+        background: white;
+      }
+
+      .artButtonThree {
+        background: white;
+      }
+
+      .artButtonFour {
+        background: white;
+      }
+
+      .artButtonIcon {
+        opacity: 1;
+      }
+    }
+  }
+
+  &Icon_Black {
+    color: black;
+    border: 3px solid black;
+
+    &:hover {
+      color: black;
+
+      .artButtonOne {
+        background: black;
+      }
+
+      .artButtonTwo {
+        background: black;
+      }
+
+      .artButtonThree {
+        background: black;
+      }
+
+      .artButtonFour {
+        background: black;
+      }
+
+      .artButtonIcon {
+        content: url("./git_icon/github-mark-white.png");
+        opacity: 1;
+      }
+    }
+  }
+
+  &Angle_Black {
+    color: black;
+    border: 3px solid black;
+
+    &:hover {
+      color: white;
+
+      .artButtonOne {
+        background: black;
+      }
+
+      .artButtonTwo {
+        background: black;
+      }
+
+      .artButtonThree {
+        background: black;
+      }
+
+      .artButtonFour {
+        background: black;
+      }
+
+      .artButtonAngleLeft {
+        background: black;
+        opacity: 1;
+      }
+      .artButtonAngleRight {
+        background: black;
+        opacity: 1;
+      }
+    }
+  }
+
+  &Angle_White {
+    color: white;
+    border: 3px solid white;
+
+    &:hover {
+      color: black;
+
+
+      .artButtonOne {
+        background: white;
+      }
+
+      .artButtonTwo {
+        background: white;
+      }
+
+      .artButtonThree {
+        background: white;
+      }
+
+      .artButtonFour {
+        background: white;
+      }
+
+      .artButtonAngleLeft {
+        background: black;
+        border-top: 10px solid transparent;
+        border-right: 10px solid white;
+        opacity: 1;
+      }
+      .artButtonAngleRight {
+        background: black;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid white;
+        opacity: 1;
+      }
+    }
+  }
+
+  &Angle_Grey {
+    color: white;
+    border: 3px solid white;
+    background: #bbb7b9;
+    //background: linear-gradient(to right, #bbb7b9, #fff);
+
+    &:hover {
+      color: black;
+
+
+      .artButtonOne {
+        background: white;
+      }
+
+      .artButtonTwo {
+        background: white;
+      }
+
+      .artButtonThree {
+        background: white;
+      }
+
+      .artButtonFour {
+        background: white;
+      }
+
+      .artButtonAngleLeft {
+        background: black;
+        border-top: 10px solid transparent;
+        border-right: 10px solid white;
+        opacity: 1;
+      }
+      .artButtonAngleRight {
+        background: black;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid white;
+        opacity: 1;
+      }
+    }
+  }
+
+  &Angle_White_Back {
+    color: white;
+    border: 3px solid white;
+
+    &:hover {
+      color: black;
+
+
+      .artButtonOne {
+        background: white;
+      }
+
+      .artButtonTwo {
+        background: white;
+      }
+
+      .artButtonThree {
+        background: white;
+      }
+
+      .artButtonFour {
+        background: white;
+      }
+
+      .artButtonAngleLeft {
+        background: black;
+        border-top: 10px solid white;
+        border-right: 10px solid transparent;
+        opacity: 1;
+      }
+      .artButtonAngleRight {
+        background: black;
+        border-bottom: 10px solid white;
+        border-left: 10px solid transparent;
+        opacity: 1;
+      }
+    }
+  }
+
+  &Angle_Black_Back {
+    color: black;
+    border: 3px solid black;
+
+    &:hover {
+      color: white;
+
+      .artButtonOne {
+        background: black;
+      }
+
+      .artButtonTwo {
+        background: black;
+      }
+
+      .artButtonThree {
+        background: black;
+      }
+
+      .artButtonFour {
+        background: black;
+      }
+
+      .artButtonAngleLeft {
+        background: black;
+        opacity: 1;
+      }
+      .artButtonAngleRight {
+        background: black;
+        opacity: 1;
+      }
+      .artButtonAngleLeft {
+        background: black;
+        border-top: 10px solid transparent;
+        border-right: 10px solid white;
+        opacity: 1;
+      }
+      .artButtonAngleRight {
+        background: black;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid white;
+        opacity: 1;
+      }
+    }
+  }
+
+  &Angle_Glass_Back {
+    color: white;
+    border: 3px solid white;
+    background: rgba(255, 255, 255, 0.27);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    &:hover {
+      color: black;
+
+
+      .artButtonOne {
+        background: white;
+      }
+
+      .artButtonTwo {
+        background: white;
+      }
+
+      .artButtonThree {
+        background: white;
+      }
+
+      .artButtonFour {
+        background: white;
+      }
+
+      .artButtonAngleLeft {
+        background: black;
+        border-top: 10px solid white;
+        border-right: 10px solid transparent;
+        opacity: 1;
+      }
+      .artButtonAngleRight {
+        background: black;
+        border-bottom: 10px solid white;
+        border-left: 10px solid transparent;
+        opacity: 1;
+      }
+    }
+  }
+
+  &Small_Glass {
+    color: white;
+    border: 3px solid white;
+    background: rgba(255, 255, 255, 0.27);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 2%;
+    border-radius: 0;
+
+    &:hover {
+      color: black;
+
+
+      .artButtonOne {
+        background: white;
+      }
+
+      .artButtonTwo {
+        background: white;
+      }
+
+      .artButtonThree {
+        background: white;
+      }
+
+      .artButtonFour {
+        background: white;
+      }
+
+      //.artButtonAngleLeft {
+      //  background: black;
+      //  border-top: 10px solid white;
+      //  border-right: 10px solid transparent;
+      //  opacity: 1;
+      //}
+      //.artButtonAngleRight {
+      //  background: black;
+      //  border-bottom: 10px solid white;
+      //  border-left: 10px solid transparent;
+      //  opacity: 1;
+      //}
+    }
+  }
+
+
+  //&YellowPink {
+  //  &::after {
+  //    background: linear-gradient(to right, #f4bb42 0%, #f5bdc4 100%) !important;
+  //  }
+  //
+  //  &::before {
+  //    background: linear-gradient(135deg, #f9db88 0%, #fdf2d1 22%, #fdf2d1 22%, #f5c2c8 79%, #f8dbde 100%) !important;
+  //  }
+  //}
+  //
+  //&Blue {
+  //  &::after {
+  //    background: linear-gradient(to right, #89dcd5 0%, #7cb1bb 100%) !important;
+  //  }
+  //
+  //  &::before {
+  //    background: linear-gradient(135deg, #e1effe 0%, #b5d6f9 21%, #85b8c0 79%, #b9d6db 100%) !important;
+  //  }
+  //}
+  //
+  //&GreenYellow {
+  //  &::after {
+  //    background: linear-gradient(to right, #a9f0f4 0%, #eedd75 100%) !important;
+  //  }
+  //
+  //  &::before {
+  //    background: linear-gradient(135deg, #ecfbfe 0%, #d0f7f8 20%, #f2de7b 79%, #f5ecb3 100%) !important;
+  //  }
+  //}
+  //
+  //&BluePurple {
+  //  &::after {
+  //    background: linear-gradient(to right, #89dcd5 0%, #9d65bf 100%) !important;
+  //  }
+  //
+  //  &::before {
+  //    background: linear-gradient(135deg, #e4f8f7 0%, #beebe8 19%, #a66bc3 79%, #caaddd 100%) !important;
+  //  }
+  //}
+  //
+  //&White {
+  //  color: black;
+  //
+  //  &::after {
+  //    background: white;
+  //  }
+  //
+  //  &:hover {
+  //    opacity: 0.7;
+  //  }
+  //}
+  //
+  //&Transparent {
+  //  color: white;
+  //}
+}

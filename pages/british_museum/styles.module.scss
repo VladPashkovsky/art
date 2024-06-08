@@ -1,0 +1,43 @@
+.container {
+  //position: relative;
+  //height: 100vh;
+
+  //.header {
+  //  position: absolute;
+  //  height: 15vh;
+  //  width: 100vw;
+  //  background-color: black;
+  //  display: flex;
+  //  align-items: center;
+  //  justify-content: center;
+  //
+  //  .header_inner {
+  //    position: relative;
+  //    display: flex;
+  //    align-items: center;
+  //    justify-content: space-between;
+  //    height: 10rem;
+  //    width: 100vw;
+  //    padding: 0 40px;
+  //
+  //    .logo {
+  //      background: url('/images/British_Museum/british-museum-logo.svg') center no-repeat;
+  //      height: 20vh;
+  //      width: 20vw;
+  //      //top: 0;
+  //    }
+  //
+  //    .button {
+  //      z-index: 10;
+  //    }
+  //  }
+  //}
+
+  .gallery {
+    position: relative;
+    display: inline-block;
+    left: 70%;
+    top: 23vh;
+    z-index: 10;
+  }
+}

@@ -1,0 +1,232 @@
+
+.section {
+  scroll-snap-align: start;
+  height: 100vh;
+  padding: 2.1429rem 6.8571rem;
+  box-sizing: border-box;
+  min-height: 600px;
+
+  &Main {
+    background: url('/bg/David_one_Compressed.jpg') center no-repeat;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 400px;
+      position: absolute;
+      z-index: 1;
+      //top: 11.3%;
+      top: 14.15%;
+      background: linear-gradient(to top, rgb(178, 174, 177) 0%, rgba(255, 255, 255, 0) 100%);
+      left: 0;
+    }
+
+  }
+
+  &Kolonnade {
+    background: url('/bg/Colonnade.jpg') center no-repeat;
+    justify-content: end;
+    align-items: start;
+  }
+
+  &Main,
+  &Kolonnade {
+    display: flex;
+    //align-items: center;
+    padding-top: 7.1429rem;
+    padding-bottom: 7.1429rem;
+    background-size: cover;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    &Text {
+        position: relative;
+       right: 1%;
+      //top: 41%;
+      display: flex;
+      justify-content: center;
+      background: black;
+      padding-top: 10px;
+      padding-left: 30px;
+      border-radius: 20px;
+    }
+  }
+
+
+  &Animation {
+    min-height: 100vh;
+    height: auto;
+    position: relative;
+    padding-bottom: 2em;
+    background: black;
+    //background: linear-gradient(to bottom, #000000 0%, #0e1217 50%, #633e60 100%);
+    //background: linear-gradient(to bottom, #000000 0%, #070000 35%, #350303 100%,);
+    padding-top: 50px;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 150px;
+      position: absolute;
+      z-index: 1;
+      top: -150px;
+      //background: linear-gradient(to top, rgba(34, 35, 49, 1) 0%, rgba(64, 55, 69, 0) 62%, rgba(82, 67, 81, 0) 100%);
+      background: linear-gradient(to top, #000000 0%, rgba(100, 92, 105, 0) 62%, rgba(157, 143, 156, 0) 100%);
+      left: 0;
+    }
+  }
+
+  &Logos {
+    position: relative;
+    min-height: auto;
+    height: 100vh;
+    padding: 0;
+    background: linear-gradient(
+                    to bottom,
+                    //#633e60 0%,
+                    //#705451 50%,
+                    //#32344B 100%
+                    #000000 0%,
+                    #070000 30%,
+                    #640505 100%
+    );
+
+  }
+
+  &DifficultForms {
+    background: linear-gradient(
+                    to bottom,
+                    #32344B 0%,
+                    #4B3961 50%,
+                    #4D2A32 100%
+    );
+    position: relative;
+    height: auto;
+    padding-bottom: 15rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: url('/bg/screen_art_object.png') center bottom no-repeat;
+      background-size: 100% auto;
+      z-index: 1;
+      opacity: 0.7;
+    }
+  }
+
+  &Content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &AlliesGallery {
+    position: relative;
+    background: linear-gradient(
+                    to bottom,
+                    #35202B 0%,
+                    #6F3C45 50%,
+                    #58294E 100%
+    );
+    min-height: auto;
+    height: auto;
+    padding-bottom: 100px;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 150px;
+      position: absolute;
+      z-index: 1;
+      top: -150px;
+      background: linear-gradient(to top, rgb(53, 32, 43, 1) 0%, rgb(53, 32, 43, 0) 100%);
+      left: 0;
+    }
+  }
+
+  &Footer {
+    padding-top: 80px;
+    padding-bottom: 76px;
+    background: #0e1217;
+    height: auto;
+    min-height: auto;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    gap: 8vw;
+
+    .copyright {
+      text-align: right;
+    }
+  }
+}
+
+.header {
+  //display: grid;
+  //grid-template-columns: 1fr auto auto;
+  //align-items: center;
+  display: flex;
+  justify-content: right;
+  gap: 2.2857rem;
+  position: absolute;
+  top: 2.2rem;
+  left: 2.8571rem;
+  right: 2.8571rem;
+  z-index: 9;
+}
+
+.titleAndButton {
+  position: absolute;
+  left: 120px;
+  z-index: 9;
+}
+
+.buttonList {
+  display: flex;
+  justify-content: center;
+  //gap: 1.4286rem;
+  gap: 3rem;
+}
+
+.artTitle {
+  margin-bottom: 2em;
+}
+
+.smallTitle {
+  margin-bottom: 15px;
+}
+
+.subTitle {
+  //margin-bottom: 50px !important;
+  position: absolute;
+  right: 12%;
+  top: 10%;
+}
+
+.logoList {
+  margin-bottom: 100px;
+}
+
+.goUp {
+  position: absolute;
+  right: 17%;
+  bottom: 4%;
+  cursor: pointer;
+  z-index: 9;
+
+}
+
+.superStar {
+  padding: 0 18px 0 11px;
+  position: relative;
+  top: 4px;
+}
+
+.superEye {
+  padding: 0 15px 0 10px;
+}

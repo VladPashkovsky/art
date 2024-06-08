@@ -1,0 +1,47 @@
+.socialNetworks {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+
+
+  &Link {
+    color: white;
+    text-indent: -1234em;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    transition: all 0.3s;
+
+
+    &:hover,
+    &:visited {
+      color: white;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &Info {
+    background-image: url('./images/info.png');
+    background-size: 100% auto;
+    pointer-events: none;
+  }
+
+  &Twitter {
+    background-image: url('./images/twitter_icon.svg');
+    background-size: 90% auto;
+  }
+
+  &AntDesign {
+    background-image: url('./images/ant-design-icon.svg');
+  }
+}
+
+.footer {
+  gap: 25px;
+}
