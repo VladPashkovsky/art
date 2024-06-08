@@ -35,6 +35,9 @@ export default function Home() {
     }
   }, [inView, api]);
 
+  function toGitHub() {
+    window.open('https://github.com/VladPashkovsky/art')
+  }
 
   return (
     <article className={styles.article}>
@@ -45,8 +48,7 @@ export default function Home() {
               <section className={cl(styles.section, styles.sectionMain)}>
                 <header className={styles.header}>
                   <SocialNetworks />
-                  <NewArtButton type="Icon_White" onClick={() => {
-                  }}>
+                  <NewArtButton type="Icon_White" onClick={toGitHub}>
                     GitHub
                   </NewArtButton>
                 </header>
