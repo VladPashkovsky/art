@@ -32,7 +32,7 @@ export const links: ArtMenuLinks[] = [
     image: '/images/British_Museum/BM_Card.jpeg',
     active: true,
     modalInfo: {
-      title: 'Badlands',
+      title: 'British_Museum',
       content: (
         <>
           <p>The British Museum is a public museum dedicated to human history, art and culture located in the Bloomsbury
@@ -258,11 +258,11 @@ In the light of the results of isotopic analysis of marble from this sarcophagus
     id: 2,
     href: '/louvre',
     title: 'LOUVRE',
-    image: '/images/Louvre/louvre.jpg',
+    image: '/images/Louvre/Louvre.jpg',
 
     active: false,
     modalInfo: {
-      title: 'Glacial Frontier',
+      title: 'Louvre_Museum',
       titleUrl: '/images/Louvre/Louvre_logo.png',
       content: (
         <>
@@ -487,7 +487,7 @@ In the light of the results of isotopic analysis of marble from this sarcophagus
     image: '/images/Borghese/Borghese.jpg',
     active: false,
     modalInfo: {
-      title: 'Sundered Grove',
+      title: 'Borghese_Museum',
       titleUrl: '/images/Borghese/borghese_logo.svg',
       content: (
         <>
@@ -758,7 +758,7 @@ In the light of the results of isotopic analysis of marble from this sarcophagus
     image: '/images/Hermitage/Hermitage.jpg',
     active: false,
     modalInfo: {
-      title: 'Sky Citadel',
+      title: 'Hermitage_Museum',
       titleUrl: '/images/Hermitage/Hermitage_logo.png',
       content: (
         <>
@@ -932,7 +932,7 @@ In the light of the results of isotopic analysis of marble from this sarcophagus
     image: '/images/Vatican_Museums/Galerie_Chiaramonti_color.jpg',
     active: false,
     modalInfo: {
-      title: 'Sky Citadel',
+      title: 'Vatican_Museum',
       titleUrl: '/images/Vatican_Museums/Vatican_logo_small.png',
       content: (
         <>
