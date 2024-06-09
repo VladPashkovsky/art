@@ -23,6 +23,7 @@
     "react-intersection-observer": "^9.10.2",
     "react-use-gesture": "^9.1.3",
     "sass": "^1.56.1",
+    "sharp": "^0.33.4",
     "typescript": "4.9.3"
   },
   "devDependencies": {

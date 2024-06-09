@@ -3,7 +3,8 @@ import { Html, Head, Main, NextScript } from 'next/document'
 export default function Document() {
   return (
     <Html>
-      <Head>
+      <Head >
+        <title>WORLD ART</title>
         <link
           rel="preload"
           href="/fonts/MazzardH-Bold.otf"

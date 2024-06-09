@@ -1,0 +1,16 @@
+
+services:
+
+  art-client:
+    build:
+      context: ./
+    restart: unless-stopped
+    image: art-image
+    ports:
+      - "3001:3000"
+    networks:
+      - art-network
+
+networks:
+  art-network:
+    driver: bridge
