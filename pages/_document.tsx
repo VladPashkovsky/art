@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html>
       <Head >
-        <title>WORLD ART</title>
+        WORLD ART
         <link
           rel="preload"
           href="/fonts/MazzardH-Bold.otf"

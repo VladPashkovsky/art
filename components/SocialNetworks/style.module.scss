@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% auto;
-    transition: all 0.3s;
+    transition: all 0.5s;
 
 
     &:hover,
@@ -22,14 +22,15 @@
     }
 
     &:hover {
-      opacity: 0.7;
+      opacity: 0.8;
+      cursor: pointer;
     }
   }
 
   &Info {
     background-image: url('./images/info.png');
     background-size: 100% auto;
-    pointer-events: none;
+    //pointer-events: none;
   }
 
   &Twitter {
@@ -40,6 +41,17 @@
   &AntDesign {
     background-image: url('./images/ant-design-icon.svg');
   }
+}
+
+.modalStyle {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  //background: #4D2A32;
+  background: url("../../public/images/Louvre/Sculptures_one_Compressed.jpg") no-repeat center center;
+
+
+  z-index: 9999;
 }
 
 .footer {
