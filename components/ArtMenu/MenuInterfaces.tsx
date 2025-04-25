@@ -46,7 +46,7 @@ export const links: ArtMenuLinks[] = [
         </>
       ),
       titleUrl: '/images/British_Museum/british-museum-logo.svg',
-      coverImage: '/images/British_Museum/Br_Museum.jpg',
+      coverImage: '/images/British_Museum/Br_Museum.webp',
       listImages: [
         {
           name: 'Man_Bust',
@@ -273,7 +273,7 @@ In the light of the results of isotopic analysis of marble from this sarcophagus
             a collection of ancient Greek and Roman sculpture</p>
         </>
       ),
-      coverImage: '/images/Louvre/gallery-apollon.jpg',
+      coverImage: '/images/Louvre/gallery-apollon.webp',
       listImages: [
         {
           name: 'Gau',
@@ -499,7 +499,7 @@ In the light of the results of isotopic analysis of marble from this sarcophagus
             1605–1621).</p>
         </>
       ),
-      coverImage: '/images/Borghese/Borghese_compressed.jpg',
+      coverImage: '/images/Borghese/Borghese_compressed.webp',
       listImages: [
         {
           name: 'ATHENA',
@@ -769,7 +769,7 @@ In the light of the results of isotopic analysis of marble from this sarcophagus
             comprise over three million items (the numismatic collection accounts for about one-third of them)</p>
         </>
       ),
-      coverImage: '/images/Hermitage/Hermitage_three.jpg',
+      coverImage: '/images/Hermitage/Hermitage_three.webp',
       listImages: [
         {
           name: 'Armour',
@@ -944,7 +944,7 @@ In the light of the results of isotopic analysis of marble from this sarcophagus
           <p>Pope Julius II founded the museums in the early 16th century.</p>
         </>
       ),
-      coverImage: '/images/Vatican_Museums/Vatican_four.jpg',
+      coverImage: '/images/Vatican_Museums/Vatican_four.webp',
       listImages: [
         {
           name: '',
